@@ -46,6 +46,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- YOUR CUSTOM STYLESHEETS GO HERE -->
+    <link rel="stylesheet" href="../styles/styles.css">
 
   </head>
 
@@ -85,14 +86,19 @@
     </nav>
     <!-- Nav Bar END -->
 
-    <nav class="navbar navbar-light bg-light justify-content-center">
-      <span class="navbar-brand mb-0 h1"><h1>Setting Up Your Environment</h1></span>
-    </nav>
+    <!-- Jumbotron START -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container-fluid text-center">
+        <h1 class="display-3">Setting Up Your Environment</h1>
+        <br>
+        <p class="lead">This part is often times overlooked by developers. Don't be one of them! It can causes many 
+          headaches down the line. Don't be one of them!
+        </p>
+      </div>
+      
+      <br>
 
-    <br><br>
-
-    <!-- Pagination START -->
-    <div class="container-fluid">
+      <!-- Pagination START -->
       <div class="row justify-content-center">
         <nav class="nav nav-pills flex-column flex-sm-row">
           <a class="flex-sm-fill text-sm-center nav-link active" href="#">1. Setting Up Your Environment</a>
@@ -100,21 +106,327 @@
           <a class="flex-sm-fill text-sm-center nav-link" href="git.html">3. Git-ting Good with Git</a>
         </nav>
       </div>
+      <!-- Pagination END -->
     </div>
-    <!-- Pagination END -->
+    <!-- Jumbtron END -->
 
-    <br><br>
+    <br>
 
     <!-- Main Content START -->
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-8 cardposts">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
-            in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+
+          <!-- Post 1 START -->
+          <div class="card">
+            <div class="card-header">
+              <h1>Table of Contents</h1>
+            </div>
+            <div class="card-body">
+              <!-- <h5>You may click on any item to navigate directly to it.</h5> -->
+              <ul class="list-group">
+                <!-- Item 1 -->
+                <li class="list-group-item"><a class="nav-link" href="#headingOne">1. Introduction - "Mise en Place"</a></li>
+                <!-- Item 2 -->
+                <li class="list-group-item"><a class="nav-link" href="#headingTwo">2. File & Folder Structure Organization</a></li>
+                <!-- Item 3 -->
+                <li class="list-group-item"><a class="nav-link" href="#headingThree">3. Terminal/Command Prompt, It's Your Best Friend</a></li>
+                <!-- Item 4 -->
+                <li class="list-group-item"><a class="nav-link" href="#headingFour">4. IDEs/Code Editors</a></li>
+              </ul>
+
+              <br>
+
+            </div>
+          </div>
+          <!-- Post 1 END -->
+
+          <br><br>
+
+          <!-- Collapsable Posts START -->
+          <div class="accordion" id="environmentAccordion">
+
+            <!-- Introduction -->
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <div class="mb-0 text-center">
+                  <button class="btn btn-link" 
+                    type="button" 
+                    data-toggle="collapse" 
+                    data-target="#collapseOne" 
+                    aria-expanded="true" 
+                    aria-controls="collapseOne">
+                    <h2>Introduction - "Mise en Place"</h2>
+                  </button>
+                </div>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#environmentAccordion">
+                <div class="card-body">
+                  <br>
+                  <p>In the culinary world, there is a widely known French culinary phrase called "mise en place". It means 
+                    "everything in its place". It refers to the pre-cooking process of getting everything ready and set up for
+                    the sake of optimal efficiency. Here's an image of what it may look like:
+                  </p>
+                  <br>
+                  <div class="text-center">
+                    <img src="../assets/images/mise-en-place.jpg" alt="mise-en-place" width="50%">
+                  </div>
+                  <br>
+                  <p>As you can see, everything is organized, obvious, and easily accessible. Imagine how much easier the
+                    cooking process will be having everything sorted out and accounted for! Compare with the following image:</p>
+                  <br>
+                  <div class="text-center">
+                    <img src="../assets/images/mess-en-place.jpg" alt="mess-en-place" width="50%">
+                  </div>
+                  <br>
+                  <p>"Mess en place"... Terrible isn't it? I referring to the countertop clutter of course! Being disorganized can
+                    add minutes of time, if not hours to the entire cooking process. The same goes with programming. Oh it can.
+                    Believe me. This brings us to the next 
+                    <a href="#headingTwo">module</a>.
+                    <!-- <a href="#headingTwo" data-toggle="collapse" 
+                      data-target="#collapseTwo" 
+                      aria-expanded="true" 
+                      aria-controls="collapseTwo">
+                      module
+                    </a>. -->
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- File & Folder Structure Organization -->
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <div class="mb-0 text-center">
+                  <button class="btn btn-link collapsed" 
+                    type="button" data-toggle="collapse" 
+                    data-target="#collapseTwo" 
+                    aria-expanded="false" 
+                    aria-controls="collapseTwo">
+                    <h2>File & Folder Structure Organization</h2>
+                  </button>
+                </div>
+              </div>
+
+              <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#environmentAccordion">
+                <div class="card-body">
+                  <br>
+                  <p>There is no right or wrong answer for this section. The way you organize your files and folders is 
+                    up to you, but I encourage you to take the time to tidy up your file system and get rid of anything you
+                    may not need. This will be important for the next module regarding the Terminal. It will make it much
+                    easier for you to navigate the file systems this way.
+                  </p>
+                  <div class="text-center">
+                    <img src="../assets/images/clean-things.png" alt="clean-things" width="50%">
+                  </div>
+                  <br>
+                  <p>For those who don't know where to start for creating an organized folder file structure, here's an example 
+                    that you can follow if you'd like (assuming this is the "Documents" or "My Documents" folder):
+                  </p>
+                  <div class="text-center">
+                    <img src="../assets/images/file-structure.png" alt="file-structure" width="75%">
+                  </div>
+                  <br>
+                  <p>Note: you can have the cloned repository to work with, and separate folders for just Class Exercises and
+                    Homework. This will make it so you can experiment with copies of certain exercises without messing up your
+                    original repository version!
+                  </p>
+                  <p>On to the next 
+                    <a href="#headingThree">module</a>.
+                    <!-- <a href="#headingThree" data-toggle="collapse" 
+                    data-target="#collapseThree" 
+                    aria-expanded="true" 
+                    aria-controls="collapseThree">
+                    module
+                  </a>. -->
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Terminal -->
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <div class="mb-0 text-center">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h2>Terminal/Command Prompt</h2>
+                  </button>
+                </div>
+              </div>
+
+              <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#environmentAccordion">
+                <div class="card-body">
+                  <br>
+                  <p>You will be spending loads of time using one of these depending on what operating system your computer runs on.
+                    Also, you can keep your hands on the keyboard longer without having to rely as much on the mouse. This means faster
+                    navigation and more coding. There isn't much more to say about this — keep using it!
+                  </p>
+                  <br>
+                  <div class="text-center">
+                    <img src="../assets/images/terminal-wars.png" alt="terminal-wars" width="75%">
+                  </div>
+                  <br>
+                  <p>Note: be comfortable navigating through your folders and files quickly and seamlessly as this will GREATLY 
+                    increase your productivity especially when paired with other systems. This includes, but is not limited to: 
+                    working efficiently with your IDE/Code Editors, optimizing Git workflow, and handling complex computer processes.
+                  </p>
+                  <p>This brings us to getting acquaited with code editors in the last 
+                    <a href="#headingFour">module</a>.
+                    <!-- <a href="#headingFour" data-toggle="collapse" 
+                      data-target="#collapseFour" 
+                      aria-expanded="true" 
+                      aria-controls="collapseFour">
+                      module
+                    </a>. -->
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Code Editors -->
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                  <div class="mb-0 text-center">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      <h2>Code Editor</h2>
+                    </button>
+                  </div>
+                </div>
+  
+                <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#environmentAccordion">
+                  <div class="card-body">
+                    <br>
+                    <p>The code editor will most likely be the most used tool in your arsenal (apart from Google/Stack Overflow).
+                      It incorporates all of the other previous subjects we have covered in this section. There are dozens of 
+                      different ones you can use. My personal favorite is Visual Studio Code (by Microsoft) as it is very lightweight,
+                      and handles almost everything that I need for writing code. You don't have to be limited to using only one. A 
+                      general rule of thumb: pick the right tool for the job!
+                    </p>
+                    <br>
+                    <hr>
+                    <br>
+                    <h3 class="text-center">Visual Studio Code Quick Setup</h3>
+                    <br>
+                    <h6>The essentials (best practices that we will be covering here):</h6>
+                    <ul class="list-group">
+                      <li class="list-group-item">A. Open Files from the Terminal</li>
+                      <li class="list-group-item">B. Use the Integrated Terminal</li>
+                      <li class="list-group-item">C. Customize It!</li>
+                      <li class="list-group-item">D. Tips & Tricks</li>
+                    </ul>
+                    <br>
+                    <hr>
+                    <p>If you haven't installed it yet, please do so at https://code.visualstudio.com/</p>
+                    <p>Once you have it installed, fire it up. You should see something like this:</p>
+                    <div class="text-center">
+                      <img src="../assets/images/vscode-1.png" alt="vscode-1" width="100%">
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <h4 class="text-center">A. Open Files from the Terminal</h4>
+                    <br>
+                    <p>Depending on what operating system you are using, there are different installation steps you
+                      may need to take to get this functionality working. Most of us will be using macOS or Windows machines.
+                      Here are the links to the documentation if you need more information about the setup process:
+                    </p>
+                    <p>macOS - https://code.visualstudio.com/docs/setup/mac</p>
+                    <p>Windows - https://code.visualstudio.com/docs/setup/windows (recommend using the installer)</p>
+                    <br>
+                    <p>NOTE: Windows users should have the functionality ready to go. If you are a macOS user, then follow the next
+                      series of steps:
+                    </p>
+                    <ul>
+                      <li class="list-item">Open Visual Studio Code.</li>
+                      <li class="list-item">Press <code class="inlinecode">command + shift + p</code> to open the command palette.</li>
+                      <li class="list-item">Type in <code class="inlinecode">shell command</code>.</li>
+                      <li class="list-item">Select the option: "Install 'code' command in PATH".</li>
+                      <li class="list-item">Restart your terminal if it is open.</li>
+                    </ul>
+                    <p>Once the shell command has been installed you can now use the <code class="inlinecode">code</code> command in your terminal to open
+                      individual files or entire folder structures straight from the terminal! Here are the two commonly used options.
+                    </p>
+                    <ul class="list-group">
+                      <li class="list-group-item"><code class="inlinecode">code (file or folder name)</code></li>
+                      <li class="list-group-item"><code class="inlinecode">code .</code></li>
+                    </ul>
+                    <br>
+                    <p>I highly recommend using the second option: <code class="inlinecode">code .</code> which works by 
+                      navigating (in terminal or command line of course) to and INTO the target FOLDER. For example, 
+                      I will be opening my GitHub Pages project folder:
+                    </p>
+                    <br>
+                    <div class="text-center">
+                      <img src="../assets/images/vscode-2.png" alt="vscode-2" width="60%">
+                      <p>NOTE: This command will open the current folder that you are INSIDE of.</p>
+                    </div>
+                    <br>
+                    <p>The result:</p>
+                    <div class="text-center">
+                      <img src="../assets/images/vscode-3.png" alt="vscode-3" width="100%">
+                      <p>NOTE: This is a very good practice to follow when working on let's say, class exercises, or homework assignments.
+                        This will open an entirely new VS Code window where you can stay organized and have access to all the relevant files
+                        on the left-hand explorer panel without mixing up files from different directories!
+                      </p>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <h4 class="text-center">B. Use the Integrated Terminal</h4>
+                    <br>
+                    <p>VS Code has this feature avaiable for your immediate convenience. To enable this feature, 
+                      navigate to the "View" dropdown menu at the top and select "Integrated Terminal". You should see:
+                    </p>
+                    <br>
+                    <div class="text-center">
+                      <img src="../assets/images/vscode-4.png" alt="vscode-4" width="100%">
+                      <p>NOTE: As you can see, the terminal opened up in the current working directory already. This is incredibly
+                        useful as it allows you to run commands immediately without having go back and forth between multiple 
+                        windows.
+                      </p>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <h4 class="text-center">C. Customize It!</h4>
+                    <br>
+                    <p>You can add customize VS Code to your liking by installing "extensions". Find the
+                      <img src="../assets/images/extensions.png" alt="extensions" width="3%"> icon on the left side of the editor
+                      to open up the VS Code extensions browser and marketplace:
+                    </p>
+                    <div class="text-center">
+                      <img src="../assets/images/vscode-5.png" alt="vscode-5" width="100%">
+                      <p>NOTE: Look around and try some things out. A really fun start would be to find a THEME that suits you! If
+                        you try something out and end up not liking it, then you can either disable it, or uninstall it.
+                      </p>
+                    </div>
+                    <br>
+                    <p>
+                      In the example above, I installed an extension called "open in browser". This is incredibly useful if you
+                      are working on HTML code and you'd like to see it immediately without having to manually find the file, 
+                      right-click it, and open it that way. This allows you to right click the file in the explorer on the left-hand
+                      side and open it from there! I highly recommend installing this one.
+                    </p>
+                    <br>
+                    <hr>
+                    <br>
+                    <h4 class="text-center">D. Tips & Tricks</h4>
+                    <br>
+                    <p>I recommend looking at the offical
+                        <a href="https://code.visualstudio.com/docs/getstarted/tips-and-tricks" target="_blank">Tips and Tricks</a>
+                        documentation page to see all cool features VS Code has to offer. I'll make a list of my favorites soon!
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+          </div>
+          <!-- Collapsable Posts END-->
+
         </div>
       </div>
     </div>
